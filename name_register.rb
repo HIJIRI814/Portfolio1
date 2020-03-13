@@ -9,7 +9,7 @@ end
 def check_input_name(name)
   if name.empty?
     p '空欄では登録できません'
-    input_name
+    name_register
   end
 end
 

@@ -23,7 +23,7 @@ def confirmation(msg1,msg2)
     p msg1
   when 2
     p msg2
-    input_name
+    name_register
   else
       p '１か２を選択してください'
       confirmation(msg1,msg2)
@@ -40,7 +40,7 @@ end
 
 # 登録を続けるかの確認
 def exit_confirmation(msg1,msg2)
-  p '登録を終了しますか？１：はい ２：いいえ'
+  p '登録を続けますか？１：はい ２：いいえ'
   select = gets.to_i
   case select
   when 1
